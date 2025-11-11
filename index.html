@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KORMENIA - Sitio Oficial</title>
+  <style>
+    :root{
+      --bordo: #5a1f1f; /* bordo */
+      --crema: #f3e1c9; /* crema */
+      --dark: #2b2b2b;
+      --maxw: 1100px;
+      --radius: 10px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--dark);background:linear-gradient(180deg, #fff 0%, #f9f7f5 100%);line-height:1.5}
+    header{background: linear-gradient(rgba(90,31,31,0.65), rgba(90,31,31,0.35)), url('/mnt/data/FC0CFA9B-8FDA-484B-84B9-228F2F149B1A.jpeg') center/cover no-repeat; color:var(--crema); padding:48px 16px 80px;}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+    nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:64px;height:64px;object-fit:contain;border-radius:8px;background:var(--crema);padding:6px}
+    .brand h1{margin:0;font-size:22px;letter-spacing:2px;color:var(--crema)}
+    .menu{display:flex;gap:12px}
+    .menu a{color:var(--crema);text-decoration:none;padding:8px 12px;border-radius:6px;transition:background .15s}
+    .menu a:hover{background:rgba(255,255,255,0.06)}
+    .hero{
+      text-align:left;padding:24px 0 30px;
+    }
+    .hero h2{font-size:42px;margin:8px 0 6px;letter-spacing:2px}
+    .hero p{margin:0 0 12px;font-size:16px;max-width:720px}
+    main{padding:36px 0;background:transparent}
+    section{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.9));border-radius:var(--radius);padding:18px;margin-bottom:18px;box-shadow:0 6px 18px rgba(20,20,20,0.06)}
+    h3{margin-top:0;color:var(--bordo)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start}
+    @media(max-width:900px){.grid{grid-template-columns:1fr} .menu{display:none} .brand h1{font-size:18px} header{padding-bottom:60px}}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px 10px;border-bottom:1px solid #e9e3dd;text-align:left}
+    th{background:var(--crema);color:var(--bordo);font-weight:700}
+    .roster ul{list-style:none;padding:0;margin:0}
+    .roster li{padding:8px 0;border-bottom:1px dashed #eee;display:flex;justify-content:space-between;align-items:center}
+    .badge{background:var(--bordo);color:var(--crema);padding:6px 10px;border-radius:20px;font-weight:700;font-size:13px}
+    .photo{width:100%;border-radius:8px;overflow:hidden}
+    .photo img{width:100%;display:block}
+    .small{font-size:13px;color:#444}
+    footer{padding:18px 0;text-align:center;color:#666;font-size:13px}
+    .inbox{background: linear-gradient(90deg, rgba(243,225,201,0.9), rgba(243,225,201,0.7)); padding:10px;border-radius:8px;border:1px solid rgba(90,31,31,0.06)}
+    .btn{display:inline-block;background:var(--bordo);color:var(--crema);padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    .muted{color:#777;font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="/mnt/data/B2285501-B4DC-4629-BD2B-EBDDE74202B1.jpeg" alt="Logo Kormenia">
+          <div>
+            <h1>KORMENIA</h1>
+            <div class="small">Equipo fundado 3 Sep 2025 · Fundación oficial 3 Nov 2025</div>
+          </div>
+        </div>
+        <div class="menu" aria-hidden="true">
+          <a href="#inicio">Inicio</a>
+          <a href="#partidos">Partidos</a>
+          <a href="#jugadores">Jugadores</a>
+          <a href="#noticias">Noticias</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <h2>Bienvenidos a KORMENIA</h2>
+        <p>Sitio no oficial del equipo. Colores oficiales: <strong style="color:var(--crema)">bordó</strong> y <strong style="color:var(--crema)">crema</strong>. Aquí podés ver resultados, goleadores, plantel, bajas y novedades.</p>
+        <a class="btn" href="#partidos">Ver Últimos Partidos</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="inicio">
+      <div class="grid">
+        <div>
+          <h3>Últimas novedades</h3>
+          <p class="muted">Tres partidos jugados — historial y tabla de goleadores actualizada con los datos que nos pasaste.</p>
+
+          <h4 style="margin-bottom:8px">Sobre el equipo</h4>
+          <p>KORMENIA es un equipo joven, con identidad y espíritu competitivo. Colores oficiales: <span class="badge">BORDÓ</span> y <span class="badge" style="background:var(--crema);color:var(--bordo)">CREMA</span>.</p>
+
+          <div style="margin-top:12px" class="inbox">
+            <strong>Actualización de bajas:</strong>
+            <p class="small" style="margin:6px 0 0">Thiago (Rata) — lesionado. Recuperación estimada: <strong>2 semanas</strong>. Reemplazo: <strong>Stefa (Nano)</strong>.</p>
+          </div>
+        </div>
+
+        <aside>
+          <div class="photo">
+            <img src="/mnt/data/FC0CFA9B-8FDA-484B-84B9-228F2F149B1A.jpeg" alt="Plantel Kormenia">
+          </div>
+          <p class="small" style="margin-top:8px">Foto del plantel. Si querés otra imagen para el banner avísame y la cambio.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="partidos">
+      <h3>Partidos</h3>
+      <p class="small">Registro de partidos jugados</p>
+      <table role="table" aria-label="Tabla de partidos">
+        <thead>
+          <tr><th>Fecha</th><th>Rival</th><th>Resultado</th><th>Notas</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>-</td><td>Isa</td><td>4 - 4</td><td>Empate</td></tr>
+          <tr><td>-</td><td>Isa</td><td>8 - 4 ✅</td><td>Victoria</td></tr>
+          <tr><td>-</td><td>Séptimo</td><td>3 - 3</td><td>Empate</td></tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin-top:16px">Tabla de goleadores</h4>
+      <table>
+        <thead><tr><th>Jugador</th><th>Goles</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Anubis</strong><br><span class="small">Simón</span></td><td>3</td></tr>
+          <tr><td><strong>Foka</strong><br><span class="small">Fran</span></td><td>3</td></tr>
+          <tr><td><strong>Pantufla</strong><br><span class="small">Fausto</span></td><td>2</td></tr>
+          <tr><td><strong>Flaco</strong><br><span class="small">Joaco</span></td><td>2</td></tr>
+          <tr><td><strong>Paca</strong><br><span class="small">Luis</span></td><td>1</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="jugadores">
+      <h3>Plantel</h3>
+      <div class="grid">
+        <div class="roster">
+          <ul>
+            <li><span><strong>Anubis</strong><br><span class="small">Simón</span></span></li>
+            <li><span><strong>Pantufla</strong><br><span class="small">Fausto</span></span></li>
+            <li><span><strong>Rata</strong><br><span class="small">Thiago</span> — <strong style="color:var(--bordo)">LESIONADO</strong></span></li>
+            <li><span><strong>Flaco</strong><br><span class="small">Joaco</span></span></li>
+            <li><span><strong>Foka</strong><br><span class="small">Fran</span></span></li>
+            <li><span><strong>Paca</strong><br><span class="small">Luis</span></span></li>
+            <li><span><strong>Tripa</strong><br><span class="small">Mateo</span></span></li>
+        </ul>
+        </div>
+
+        <aside>
+          <h4>Información rápida</h4>
+          <p class="small">Reemplazo temporal por lesión: <strong>Stefa (Nano)</strong>.</p>
+          <p class="small">Si querés agregar fotos de cada jugador puedo armar las fichas individuales.</p>
+          <div style="margin-top:12px">
+            <a class="btn" href="#contacto">Contactar al staff</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="noticias">
+      <h3>Noticias</h3>
+      <article style="margin-bottom:12px">
+        <h4 style="margin:4px 0">Nuevo refuerzo / cambio</h4>
+        <p class="small">Stefa (Nano) entra como reemplazo de Thiago (Rata) durante su recuperación de 2 semanas.</p>
+      </article>
+      <article>
+        <h4 style="margin:4px 0">Fundación</h4>
+        <p class="small">KORMENIA fundado el <strong>3 de septiembre de 2025</strong>. Fundación oficial: <strong>3 de noviembre de 2025</strong>.</p>
+      </article>
+    </section>
+
+    <section id="contacto">
+      <h3>Contacto</h3>
+      <p class="small">Para modificar datos, subir fotos o pedir cambios en la web escribime y lo actualizo.</p>
+      <p class="small">Sugerencia técnica: este archivo HTML puede subirse tal cual a <strong>GitHub Pages</strong> o <strong>Netlify</strong>. También podés copiar y pegar el contenido en un hosting simple.</p>
+      <p class="small">Si querés te preparo también una versión con administración (para cargar partidos/goles vía formulario).</p>
+      <div style="margin-top:8px;">
+        <strong>Archivos incluidos:</strong>
+        <ul class="small">
+          <li>Logo: <code>/mnt/data/B2285501-B4DC-4629-BD2B-EBDDE74202B1.jpeg</code></li>
+          <li>Foto plantel (banner): <code>/mnt/data/FC0CFA9B-8FDA-484B-84B9-228F2F149B1A.jpeg</code></li>
+          <li>Chat historial (para referencia): <code>/mnt/data/D2A52E76-56B9-49E6-8894-2BE89AFBD51D.jpeg</code></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © KORMENIA · Sitio generado automáticamente · Colores: Bordó / Crema
+    </footer>
+  </main>
+</body>
+</html>
